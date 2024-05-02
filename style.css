@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+    padding: 30px 0;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(128, 128, 128,.1);
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+img::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.conteneur{
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.entete{
+    background-color: #226d68;
+    border-radius: 5px 5px 0 0;
+    padding: 20px;
+    color: #fff;
+    line-height: 1.1;
+    text-align: justify;
+}
+form p{
+    text-align: center;
+}
+.entete form input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    letter-spacing: 2px;
+    text-indent: 10px;
+}
+h1{
+    font-size: 1.555em;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+h1::first-letter{
+    font-size: 1.87em;
+}
+
+.conteneur section{
+    padding: 10px;
+    gap: 20px;
+    max-height: 450px;
+    overflow-y: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.conteneur section .flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: #f4f3f3;
+    padding: 5px;
+    
+}
+
+@media (max-width: 913px) {
+    body{
+        padding: 20px 0;
+    }
+    .conteneur{
+        width: 80%;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 560px) {
+    body{
+        padding: 15px;
+    }
+    .conteneur{
+        width: 90%;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 350px) {
+    body{
+        padding: 0;
+    }
+    .conteneur{
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}
